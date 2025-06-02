@@ -1,0 +1,12 @@
+{
+        "equals": [
+            "/api/user/login",
+            "/api/user/signup",
+            "/api/user/resetpassword",
+            "/api/user/addmusic",
+            "/api/user/createbanner"
+        ],
+        "contains":[
+            "/forgetpassword"
+        ]
+}

@@ -1,0 +1,7 @@
+{
+    "db": {
+        "database": "tunezy",
+        "uri": "localhost",
+        "port":"27017"
+    }
+}

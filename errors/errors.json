@@ -1,0 +1,72 @@
+{
+    "successRep": {
+        "success": true,
+        "errorCode":0,
+        "description": "SUCCESS"
+    },
+    "userAlreadyExists" : {
+        "success":false, 
+        "errorCode":400, 
+        "description": "user already exists! please login"
+    },
+    "failedToInsertMusic" : {
+        "success":false, 
+        "errorCode":400, 
+        "description": "Failed to add Music"
+    },
+    "failedToFetchMusic" : {
+        "success":false, 
+        "errorCode":400, 
+        "description": "Failed to fetch Music"
+    },
+    "failedToAddMusic" : {
+        "success":false, 
+        "errorCode":400, 
+        "description": "Failed to Add Music"
+    },
+    "noMusicFound" : {
+        "success":false, 
+        "errorCode":200, 
+        "description": "No Music Found!"
+    },
+    "noPlaylistFound" : {
+        "success":false, 
+        "errorCode":200, 
+        "description": "No Playlist Found!"
+    },
+    "OTPDoesNotMatch" : {
+        "success":false, 
+        "errorCode":400, 
+        "description": "Invalid OTP!"
+    },
+    "userNotFoundError" : {
+        "success":false, 
+        "errorCode":400, 
+        "description": "user not found"
+    },
+    "invalidTokenError" :{ 
+        "success":false, 
+        "errorCode":401, 
+        "description": "Invalid Token! Please login again" 
+    },
+    "missingTokenError" :{ 
+        "success":false, 
+        "errorCode":401, 
+        "description": "Missing token! Please pass token"    
+    },
+    "invalidPasswordError" :{ 
+        "success":false, 
+        "errorCode":401, 
+        "description": "Invalid Password"    
+    },
+    "invalidEmailAddress" :{ 
+        "success":false, 
+        "errorCode":401, 
+        "description": "Invalid Email Address"    
+    },
+    "serverError":{
+        "success": false,
+        "errorCode": 500,
+        "description": "Something went wrong"
+    }
+}
