@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: authConfig.emailUser,
-        pass: authConfig.password
+        pass: process.env.password
     }
 });
 fs.readFile(path.join(__dirname, "../../template/otpMailTemplate.html"), 'utf8', (err, data) => {

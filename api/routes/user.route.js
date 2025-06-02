@@ -21,7 +21,7 @@ console.log("callbackURL:", callbackURL)
 
 // Configure session middleware
 router.use(session({
-    secret: config.gcpClientSecret,
+    secret: process.env.gcpClientSecret,
     resave: false,
     saveUninitialized: true,
   }));
@@ -31,8 +31,8 @@ router.use(passport.initialize());
 router.use(passport.session());
 
 passport.use(new GoogleStrategy({
-    clientID: config.gcpClientId,
-    clientSecret: config.gcpClientSecret,
+    clientID: process.env.gcpClientId,
+    clientSecret: process.env.gcpClientSecret,
     callbackURL: callbackURL,
   },LoginService.googleLogin));
   

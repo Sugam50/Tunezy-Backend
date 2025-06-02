@@ -4,7 +4,7 @@ const cors = require("cors");
 const userRoute = require('./api/routes/user.route');
 const connectDB = require('./db/db');
 
-const port = 3500;
+const port = process.env.PORT;
 const init = async () => {
     app.use(express.json())
     app.use(cors()); 
